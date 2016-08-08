@@ -153,7 +153,7 @@ export default class Chart extends Component<void, any, any> {
 			<View>
 				{(() => {
 					const ChartType = components[this.props.type] || BarChart;
-					if (this.props.showAxis && Chart !== PieChart) {
+					if (this.props.showAxis && ChartType !== PieChart) {
 						return (
 							<View
 								ref="container"

@@ -153,7 +153,7 @@ return(
 _react2.default.createElement(_reactNative.View,null,
 function(){
 var ChartType=components[_this2.props.type]||_BarChart2.default;
-if(_this2.props.showAxis&&Chart!==_PieChart2.default){
+if(_this2.props.showAxis&&ChartType!==_PieChart2.default){
 return(
 _react2.default.createElement(_reactNative.View,{
 ref:'container',
